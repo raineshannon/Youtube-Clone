@@ -1,0 +1,147 @@
+.thumbnail {
+    width: 100%;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media (min-width: 1000px) {
+    .video-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-author, .video-stats {
+        font-size: 14px;
+    }
+}
+
+.video-link-title {
+    color: black;
+    text-decoration: none;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 100px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-author, .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-author-link {
+    text-decoration: none;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width:999fr) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1120px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.channel-picture-container {
+    display: inline-block;
+    position: relative;
+}
+
+.channel-tooltip {
+    position: absolute;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 4px;
+
+    bottom: -80px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.channel-picture-container:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel-tooltip-picture {
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 8px;
+}
+
+.channel-tooltip-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.channel-tooltip-stats {
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+}
+
